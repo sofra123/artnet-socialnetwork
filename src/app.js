@@ -14,7 +14,7 @@ import Findpeople from "./findpeople";
 import Friends from "./friends";
 import Chat from "./chat";
 import Onlineusers from "./onlineusers";
-import Favoriteartists from "./favoriteartists";
+// import Favoriteartists from "./favoriteartists";
 
 export default class App extends React.Component {
     constructor(props) {

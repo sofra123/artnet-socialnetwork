@@ -12,13 +12,7 @@ export default class Favoriteartists extends React.Component {
         // this.finishedUploadingPic = this.finishedUploadingPic.bind(this);
     }
 
-    // finishedUploadingPic(newPic) {
-    //     console.log("this.state after upload", this.state);
-    //     this.setState({ Pic: newPic });
-    // }
-
     componentDidMount() {
-        console.log("componentDidMount");
         axios.get("/getimages").then(({ data }) => {
             console.log("getpictures GET /users results: ", data);
             this.setState({
@@ -36,7 +30,6 @@ export default class Favoriteartists extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
         const imageFile = this.state.image;
-        // console.log("s3 object", s3);
 
         var formData = new FormData();
         formData.append("file", imageFile);
@@ -54,15 +47,10 @@ export default class Favoriteartists extends React.Component {
     }
 
     render() {
-        console.log("this.props from fav artists: ", this.props);
-        console.log("this.state fav artists", this.state);
         const { image } = this.state;
-        // if (image) {
-        //     return null;
-        // } else {
+
         return (
             <div className="Postpic">
-                {/* <span onClick={this.props.hideUploader}>x</span> */}
                 <h3>Do you want to add pictures of your favorite artists?</h3>
                 <form id="uploader-form" onSubmit={this.handleSubmit}>
                     <input

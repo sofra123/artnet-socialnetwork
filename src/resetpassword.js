@@ -16,10 +16,10 @@ export default class Resetpassword extends React.Component {
         console.log(e.target.value, "e.target.value");
         this.setState(
             {
-                [e.target.name]: e.target.value //variable as property. works for all the inputs!!
+                [e.target.name]: e.target.value
             },
             () => console.log(this.state)
-        ); // because I don´t want that the console.log happens before setState is done
+        );
     }
 
     handleReset1(e) {

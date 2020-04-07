@@ -1,5 +1,3 @@
-// import { acceptFriendRequest } from "../db";
-
 export default function reducer(state = {}, action) {
     if (action.type == "RECEIVE_FRIENDS_WANNABES") {
         state = {
@@ -67,22 +65,3 @@ export default function reducer(state = {}, action) {
 
     return state;
 }
-
-// enough to create the store
-//we don´t pass explicitly the argument. Reducer is called automatically. Dispatch creates the action and passes action to reducer
-
-//action type CHANGE
-// action.js
-//dispatch takes action (object )and passes to reducer
-//reduce actual thing that changes the state
-
-//reducer changes immutably. Everything done in the reducer immutably. NO push pop shift. (add something to arary immutably)
-// map, filter, slice, concat
-//code for reducer in reducer.js
-
-//useSelector in the component
-//action.js function() {
-//   return axios.get
-//}
-
-//when component mounts dispatch

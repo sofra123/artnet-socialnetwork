@@ -37,17 +37,9 @@ export default class BioEditor extends React.Component {
         const bio = this.state.bio;
         console.log("inside handle function");
 
-        // setBio(bio);
-        // console.log("bio", bio);
-        // this.setState({ showEditor: false });
-
         axios
             .post("/bio", { bio: this.state.bio })
             .then(response => {
-                // console.log(
-                //     "bioeditor.js handleClick axios.post /bio then response: ",
-                //     response
-                // );
                 console.log("bio inside handlesubmit: ", bio);
                 setBio(bio);
                 // this.props.setBio(response.data.rows[0].bio);

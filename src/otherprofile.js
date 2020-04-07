@@ -16,11 +16,6 @@ export default class Otherprofile extends React.Component {
 
             if (data.redirectToProfile) {
                 this.props.history.push("/");
-
-                // } else if () { // some test to determine a user was not found
-                //     this.setState({
-                //         error: true
-                //     }) ;
             } else {
                 this.setState(
                     data,
@@ -67,14 +62,3 @@ export default class Otherprofile extends React.Component {
         );
     }
 }
-
-// {
-//     pictures.map(image => (
-//         <div key={image.id}>
-//             {/* <p>
-//                 {user.first} {user.last}
-//             </p> */}
-//             <img className="image-pic-post" src={image.pic} />
-//         </div>
-//     ));
-// }

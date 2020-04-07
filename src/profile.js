@@ -7,7 +7,6 @@ import Pictures from "./pictures";
 export default class Profile extends React.Component {
     constructor(props) {
         super(props);
-        // this.state = {};
     }
 
     render() {
@@ -17,13 +16,10 @@ export default class Profile extends React.Component {
                     <h2>Hello {this.props.first}</h2>
                     <div className="picbio">
                         <Profilepic
-                            // first={this.props.first}
-                            // last={this.props.last}
                             url={this.props.url}
                             showUploader={this.props.showUploader}
                             hideUploader={this.props.hideUploader}
                         />
-                        <div className="overlay"></div>
 
                         <Bioeditor
                             bio={this.props.bio}
@@ -35,7 +31,6 @@ export default class Profile extends React.Component {
                                 this.props.finishedUploadingPic
                             }
                             hideUploaderPic={this.props.hideUploaderPic}
-                            showUploaderforPic={this.props.showUploaderforPic}
                         />
                         <Pictures
                             showUploaderPic={this.props.showUploaderPic}
