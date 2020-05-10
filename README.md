@@ -9,6 +9,7 @@ Artnet is a social network dedicated to artists and art lovers who want to conne
 * Express.js
 * Node.js
 * PostgreSQL
+* Socket.IO
 * AWS S3 Cloud Storage
 * Webpack as a module bundler
 
